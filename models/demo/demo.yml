@@ -28,6 +28,9 @@ models:
 
   - name: product
     description: 'DBT Model for the product table'
+  
+  - name: purchase
+    description: 'DBT Model for the purchase table'
           
 
 sources:
@@ -46,8 +49,15 @@ sources:
     schema: PUBLIC
     tables:
       - name: SALES_SRC
+  
   - name: product
     database: DBT_DB
     schema: PUBLIC
     tables:
       - name: PRODUCT_SRC
+
+  - name: purchase
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: PURCHASE_SRC
