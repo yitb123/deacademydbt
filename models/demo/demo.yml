@@ -41,6 +41,12 @@ models:
   - name: session
     description: 'DBT Model for the session table'
 
+  - name: concat_name
+    description: 'DBT Model for the concat name'
+  
+  - name: concat_address
+    description: 'DBT Model for the concat address'
+
           
 
 sources:
